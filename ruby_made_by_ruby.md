@@ -37,3 +37,8 @@ goh@goh% ruby calc3.rb
 100
 ```
 
+```
+goh@goh% ruby calc_ext1.rb
+101
+```
+
