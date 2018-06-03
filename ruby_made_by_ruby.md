@@ -14,3 +14,10 @@ goh@goh% ruby calc.rb
 100
 ```
 
+# 2 変数・分岐・ループ
+
+```
+goh@goh% ruby calc0.rb
+100
+```
+
