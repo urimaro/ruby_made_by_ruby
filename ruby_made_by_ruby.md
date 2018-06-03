@@ -26,3 +26,8 @@ goh@goh% ruby calc2.rb
 goh@goh%
 ```
 
+```
+goh@goh% ruby calc2.rb
+100
+```
+
