@@ -5,3 +5,12 @@ goh@goh% ruby two.rb
 2
 ```
 
+```
+goh@goh% ruby calc.rb
+2
+6
+3
+2
+100
+```
+
