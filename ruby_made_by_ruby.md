@@ -47,3 +47,9 @@ goh@goh% ruby calc_ext2.rb
 5
 ```
 
+```
+goh@goh% ruby calc_ext3.rb
+1
+1
+```
+
