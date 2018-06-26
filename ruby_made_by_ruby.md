@@ -86,3 +86,12 @@ goh@goh% ruby calc5.rb
 "はずれ！"
 ```
 
+```
+goh@goh% ruby calc5_ext1.rb
+10
+goh@goh% ruby calc5_ext1.rb
+55
+"あたりです！"
+"おめでとうございます！"
+```
+
