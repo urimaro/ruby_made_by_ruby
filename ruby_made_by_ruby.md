@@ -108,3 +108,13 @@ goh@goh% ruby calc5_ext2.rb
 "また遊んでね！"
 ```
 
+```
+goh@goh% ruby calc6_ext1.rb
+50
+"はずれ！"
+51
+"はずれ！"
+55
+"あたり！"
+```
+
