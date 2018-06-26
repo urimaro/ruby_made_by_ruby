@@ -133,3 +133,10 @@ goh@goh% ruby calc7.rb
 501500
 ```
 
+2.6.2 偶数だけ足し算する
+
+```
+goh@goh% ruby calc8.rb
+250500
+```
+
