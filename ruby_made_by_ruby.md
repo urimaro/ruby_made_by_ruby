@@ -118,3 +118,8 @@ goh@goh% ruby calc6_ext1.rb
 "あたり！"
 ```
 
+```
+goh@goh% ruby calc6_ext2.rb
+500500
+```
+
