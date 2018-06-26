@@ -80,3 +80,9 @@ goh@goh% ruby calc4.rb
 10
 ```
 
+```
+goh@goh% ruby calc5.rb
+10
+"はずれ！"
+```
+
