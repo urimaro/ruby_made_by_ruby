@@ -267,3 +267,11 @@ goh@goh% ruby try-pair.rb
 [10, 20]
 ```
 
+# 3.1.1 配列から値を取り出す
+
+```
+goh@goh% ruby try-pair_ext1.rb
+10
+20
+```
+
