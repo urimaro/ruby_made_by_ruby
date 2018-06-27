@@ -275,3 +275,15 @@ goh@goh% ruby try-pair_ext1.rb
 20
 ```
 
+# 3.1.2 さまざまな配列
+
+```
+goh@goh% ruby array_ext1.rb
+10
+20
+30
+[10]
+10
+[]
+```
+
