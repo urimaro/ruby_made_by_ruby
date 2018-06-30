@@ -359,3 +359,7 @@ goh@goh% ruby tree-names.rb
 
 「preorder(node1)」を日本で表現すると「node1にpreorderを適用する」
 
+# 3.3.3 関数の中で関数を適用する
+
+再帰: 関数定義の中で自分自身を用いること
+
