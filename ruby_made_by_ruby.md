@@ -355,3 +355,7 @@ goh@goh% ruby tree-names.rb
 
 関数: プログラムの断片を使い回しできるようにしたもの
 
+# 3.3.2 関数を定義する方法
+
+「preorder(node1)」を日本で表現すると「node1にpreorderを適用する」
+
