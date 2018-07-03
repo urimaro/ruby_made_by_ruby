@@ -383,3 +383,13 @@ goh@goh% ruby 361_various_tree.rb
 "葉D"
 ```
 
+# 3.6.2 葉だけ列挙する
+
+```
+goh@goh% ruby 362_print_only_leaves.rb
+"葉A"
+"葉B"
+"葉C"
+"葉D"
+```
+
