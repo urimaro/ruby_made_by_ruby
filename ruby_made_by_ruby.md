@@ -393,3 +393,16 @@ goh@goh% ruby 362_print_only_leaves.rb
 "葉D"
 ```
 
+# 3.6.3 帰りがけ順
+
+```
+goh@goh% ruby 363_postorder.rb
+"葉A"
+"葉B"
+"節2"
+"葉C"
+"葉D"
+"節3"
+"節1"
+```
+
