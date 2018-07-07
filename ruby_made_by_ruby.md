@@ -447,3 +447,13 @@ goh@goh% bundle exec ruby 430_parse_sample.rb
 ["+", ["lit", 1], ["*", ["lit", 2], ["lit", 4]]]
 ```
 
+```
+goh@goh% be ruby 430_parse_sample2.rb
+"Use p"
+["*", ["*", ["/", ["+", ["lit", 1], ["lit", 2]], ["lit", 3]], ["lit", 4]], ["+", ["+", ["/", ["lit", 56], ["lit", 7]], ["lit", 8]], ["lit", 9]]]
+"Use pp"
+["*",
+ ["*", ["/", ["+", ["lit", 1], ["lit", 2]], ["lit", 3]], ["lit", 4]],
+ ["+", ["+", ["/", ["lit", 56], ["lit", 7]], ["lit", 8]], ["lit", 9]]]
+```
+
