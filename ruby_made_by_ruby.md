@@ -488,3 +488,16 @@ goh@goh% be ruby 460_interp.rb
 100
 ```
 
+# 4.8.1 演算の追加
+
+剰余(%)、累乗(\*\*)を追加する
+
+```
+goh@goh% be ruby 481_interp.rb
+8 % 3
+2
+goh@goh% be ruby 481_interp.rb
+2 ** 4
+16
+```
+
