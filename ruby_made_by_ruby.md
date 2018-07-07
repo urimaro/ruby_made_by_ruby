@@ -438,3 +438,12 @@ goh@goh% ruby 363_postorder.rb
 3. 計算の木を実行(計算)する
 4. 計算結果を出力する
 
+# 4.3 計算式の文字列を計算の木に変換する
+
+構文解析には `minruby_parse` を使う
+
+```
+goh@goh% bundle exec ruby 430_parse_sample.rb
+["+", ["lit", 1], ["*", ["lit", 2], ["lit", 4]]]
+```
+
