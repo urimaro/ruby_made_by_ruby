@@ -501,3 +501,46 @@ goh@goh% be ruby 481_interp.rb
 16
 ```
 
+# 4.8.2 比較式の追加
+
+`<` `<=` `==` `!=` `>=` `>` を追加する
+
+```
+goh@goh% be ruby 482_interp.rb
+1 + 1 == 2
+true
+goh@goh% be ruby 482_interp.rb
+1 + 1 == 3
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 != 2
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 != 3
+true
+goh@goh% be ruby 482_interp.rb
+1 + 1 < 2
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 < 3
+true
+goh@goh% be ruby 482_interp.rb
+1 + 1 <= 1
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 <= 2
+true
+goh@goh% be ruby 482_interp.rb
+1 + 1 >= 2
+true
+goh@goh% be ruby 482_interp.rb
+1 + 1 >= 3
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 > 2
+false
+goh@goh% be ruby 482_interp.rb
+1 + 1 > 1
+true
+```
+
