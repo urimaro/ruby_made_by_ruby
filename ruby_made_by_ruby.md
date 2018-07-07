@@ -544,3 +544,17 @@ goh@goh% be ruby 482_interp.rb
 true
 ```
 
+# 4.8.3 最大の葉
+
+```
+goh@goh%be ruby 483_max.rb
+1 + 2 * 3
+3
+goh@goh%be ruby 483_max.rb
+1 + 4 + 3
+4
+goh@goh%be ruby 483_max.rb
+10 + 10 + 10
+10
+```
+
