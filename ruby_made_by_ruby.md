@@ -457,3 +457,14 @@ goh@goh% be ruby 430_parse_sample2.rb
  ["+", ["+", ["/", ["lit", 56], ["lit", 7]], ["lit", 8]], ["lit", 9]]]
 ```
 
+# 4.4 関数の引数と返り値
+
+引数: 関数が受け取る値
+返り値: 関数が返す値
+
+```
+goh@goh% be ruby 440_parameter_and_return_value.rb
+"Addition!"
+42
+```
+
