@@ -468,3 +468,10 @@ goh@goh% be ruby 440_parameter_and_return_value.rb
 42
 ```
 
+# 4.5 足し算の木を扱う
+
+```
+goh@goh% be ruby 450_sum.rb
+10
+```
+
