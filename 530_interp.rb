@@ -22,6 +22,8 @@ def evaluate(tree, env)
       i = i + 1
     end
     last
+  when "var_assign"
+    env[tree[1]] = evaluate(tree[2], env)
   end
 end
 
