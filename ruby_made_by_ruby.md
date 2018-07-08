@@ -630,3 +630,41 @@ goh@goh% be ruby 531_variable.rb
  ["var_assign", "y", ["*", ["lit", 2], ["lit", 3]]]]
 ```
 
+# 5.3.2 ハッシュ
+
+ハッシュ: 値と値の対応表
+
+```
+# 作成
+2.5.1 pry> hsh = { "foo" => 1, "bar" => 2 }
+=> {"foo"=>1, "bar"=>2}
+2.5.1 pry> p(hsh)
+{"foo"=>1, "bar"=>2}
+=> {"foo"=>1, "bar"=>2}
+
+# 参照
+2.5.1 pry> p(hsh["foo"])
+1
+=> 1
+
+# 対応を追加
+2.5.1 pry> hsh["answer"] = 42
+=> 42
+2.5.1 pry> p(hsh["answer"])
+42
+=> 42
+2.5.1 pry> p(hsh)
+{"foo"=>1, "bar"=>2, "answer"=>42}
+=> {"foo"=>1, "bar"=>2, "answer"=>42}
+
+# 対応の値を更新
+2.5.1 pry> hsh["foo"] = 100
+=> 100
+2.5.1 pry> p(hsh["foo"])
+100
+=> 100
+2.5.1 pry> p(hsh)
+{"foo"=>100, "bar"=>2, "answer"=>42}
+=> {"foo"=>100, "bar"=>2, "answer"=>42}
+```
+
