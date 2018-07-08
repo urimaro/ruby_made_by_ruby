@@ -616,3 +616,17 @@ goh@goh% be ruby 520_interp.rb 524_test.rb
 42
 ```
 
+# 5.3.1 変数代入の抽象構文木
+
+変数代入
+- ラベル: var_assign
+- 左: 変数名
+- 右: 代入する値
+
+```
+goh@goh% be ruby 531_variable.rb
+["stmts",
+ ["var_assign", "x", ["lit", 1]],
+ ["var_assign", "y", ["*", ["lit", 2], ["lit", 3]]]]
+```
+
