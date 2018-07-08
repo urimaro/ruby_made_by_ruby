@@ -695,3 +695,10 @@ Rubyは以下のように扱う
 - false, nil: 偽
 - 上記以外: 真
 
+# 5.7.1 現状のインタプリタで変数をおさらい
+
+```
+goh@goh% be ruby 560_interp.rb calc2.rb
+100
+```
+
