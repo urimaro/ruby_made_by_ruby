@@ -607,3 +607,12 @@ goh@goh% be ruby 522_statements.rb
 2. `stmts` が持つ部分木を順番に実行する
 3. 最後に実行した部分木の結果を返す
 
+# 5.2.4 複文の実行
+
+```
+goh@goh% be ruby 520_interp.rb 524_test.rb
+3
+42
+42
+```
+
