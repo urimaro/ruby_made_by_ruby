@@ -681,3 +681,10 @@ goh@goh% be ruby 540_reference_variable.rb
  ["var_assign", "y", ["+", ["lit", 2], ["var_ref", "x"]]]]
 ```
 
+# 5.5 動作確認
+
+```
+goh@goh% be ruby 540_interp.rb 550_test.rb
+3
+```
+
