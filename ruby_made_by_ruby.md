@@ -591,3 +591,13 @@ goh@goh% be ruby 510_interp.rb test.rb
 計算式: 単文
 プログラム: 複文(式が複数ある)
 
+# 5.2.2 複文の抽象構文木
+
+```
+goh@goh% be ruby 522_statements.rb
+["stmts",
+ ["+", ["lit", 1], ["lit", 2]],
+ ["*", ["lit", 6], ["lit", 7]],
+ ["+", ["lit", 40], ["lit", 2]]]
+```
+
