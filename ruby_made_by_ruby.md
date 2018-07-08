@@ -672,3 +672,12 @@ goh@goh% be ruby 531_variable.rb
 
 環境: 変数名と値が対応したハッシュ
 
+# 5.4 変数参照を実装する
+
+```
+goh@goh% be ruby 540_reference_variable.rb
+["stmts",
+ ["var_assign", "x", ["lit", 1]],
+ ["var_assign", "y", ["+", ["lit", 2], ["var_ref", "x"]]]]
+```
+
