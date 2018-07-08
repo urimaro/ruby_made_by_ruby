@@ -558,3 +558,14 @@ goh@goh%be ruby 483_max.rb
 10
 ```
 
+# 5.1 ファイルから入力を読み取る
+
+```
+goh@goh% be ruby 510_interp.rb
+1 + 1
+2
+goh@goh% be ruby 510_interp.rb
+(1 + 2) / 3 * 4 * (56 / 7 + 8 + 9)
+100
+```
+
