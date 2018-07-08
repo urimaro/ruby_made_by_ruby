@@ -688,3 +688,10 @@ goh@goh% be ruby 540_interp.rb 550_test.rb
 3
 ```
 
+# 5.6 まとめ
+
+Rubyは以下のように扱う
+
+- false, nil: 偽
+- 上記以外: 真
+
