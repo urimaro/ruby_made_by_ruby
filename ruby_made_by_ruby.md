@@ -714,3 +714,19 @@ goh@goh% be ruby 572_interp.rb 572_plus_count.rb
 4
 ```
 
+# 5.7.3 デバッグのコツ
+
+エラーが発生したら、 `evaluate` の最初に `pp(tree)` を入れて調べれば良いが、大量にメッセージが出力されてしまう
+扱い方がわからない節に出会ったら報告させるようにする
+
+```
+goh@goh% be ruby 573_interp.rb 573_debug.rb
+["**", ["lit", 2], ["lit", 3]]
+Traceback (most recent call last):
+	4: from 573_interp.rb:42:in `<main>'
+	3: from 573_interp.rb:21:in `evaluate'
+	2: from 573_interp.rb:26:in `evaluate'
+	1: from 573_interp.rb:8:in `evaluate'
+573_interp.rb:8:in `+': Array can't be coerced into Integer (TypeError)
+```
+
