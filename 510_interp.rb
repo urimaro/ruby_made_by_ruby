@@ -16,7 +16,7 @@ def evaluate(tree)
 end
 
 # 1. 計算式の文字列を読み込む
-str = gets
+str = minruby_load()
 
 # 2. 計算式の文字列を計算の木に変換する
 tree = minruby_parse(str)
