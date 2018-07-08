@@ -12,6 +12,8 @@ def evaluate(tree)
     evaluate(tree[1]) * evaluate(tree[2])
   when "/"
     evaluate(tree[1]) / evaluate(tree[2])
+  when "func_call" # 仮の実装
+    p(evaluate(tree[2]))
   end
 end
 
@@ -23,6 +25,3 @@ tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
 answer = evaluate(tree)
-
-# 4. 計算結果を出力する
-p(answer)
