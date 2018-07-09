@@ -730,3 +730,15 @@ Traceback (most recent call last):
 573_interp.rb:8:in `+': Array can't be coerced into Integer (TypeError)
 ```
 
+# 6.1 if文を実装する
+
+`if` 分をparseしてみる
+
+```
+goh@goh% be ruby 610_if_statement.rb
+["if",
+ ["==", ["lit", 0], ["lit", 0]],
+ ["func_call", "p", ["lit", 42]],
+ ["func_call", "p", ["lit", 43]]]
+```
+
