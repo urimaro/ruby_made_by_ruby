@@ -742,3 +742,11 @@ goh@goh% be ruby 610_if_statement.rb
  ["func_call", "p", ["lit", 43]]]
 ```
 
+`interp.rb` において、 `if` 文の実装は環境を参照したり、変更していない
+すなわち、変数を参照していないことに注目
+
+```
+goh@goh% be ruby interp.rb 610_if_statement_sample.rb
+42
+```
+
