@@ -758,3 +758,18 @@ goh@goh% be ruby interp.rb 610_if_statement_sample.rb
 
 インタプリタの本質: ターゲット言語の言語機能をホスト言語に丸投げすること
 
+# 6.3 while文を実装する
+
+`while` 文をparseしてみる
+
+```
+goh@goh% be ruby 630_while_statement.rb
+["stmts",
+ ["var_assign", "i", ["lit", 0]],
+ ["while",
+  ["<", ["var_ref", "i"], ["lit", 10]],
+  ["stmts",
+   ["func_call", "p", ["var_ref", "i"]],
+   ["var_assign", "i", ["+", ["var_ref", "i"], ["lit", 1]]]]]]
+```
+
