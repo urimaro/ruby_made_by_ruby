@@ -787,3 +787,18 @@ goh@goh% be ruby interp.rb 630_while_statement_sample.rb
 9
 ```
 
+# 6.4 case文は？
+
+`case` 文をparseしてみる
+
+```
+goh@goh% be ruby 640_case_statement.rb
+["if",
+ ["==", ["lit", 42], ["lit", 0]],
+ ["func_call", "p", ["lit", 0]],
+ ["if",
+  ["==", ["lit", 42], ["lit", 1]],
+  ["func_call", "p", ["lit", 1]],
+  ["func_call", "p", ["lit", 2]]]]
+```
+
