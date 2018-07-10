@@ -802,3 +802,8 @@ goh@goh% be ruby 640_case_statement.rb
   ["func_call", "p", ["lit", 2]]]]
 ```
 
+```
+goh@goh% be ruby interp.rb 640_case_statement_sample.rb
+2
+```
+
