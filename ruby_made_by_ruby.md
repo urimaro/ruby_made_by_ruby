@@ -732,7 +732,7 @@ Traceback (most recent call last):
 
 # 6.1 if文を実装する
 
-`if` 分をparseしてみる
+`if` 文をparseしてみる
 
 ```
 goh@goh% be ruby 610_if_statement.rb
