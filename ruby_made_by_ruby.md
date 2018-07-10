@@ -773,3 +773,17 @@ goh@goh% be ruby 630_while_statement.rb
    ["var_assign", "i", ["+", ["var_ref", "i"], ["lit", 1]]]]]]
 ```
 
+```
+goh@goh% be ruby interp.rb 630_while_statement_sample.rb
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
