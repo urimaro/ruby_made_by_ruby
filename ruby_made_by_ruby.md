@@ -813,3 +813,12 @@ goh@goh% be ruby interp.rb 640_case_statement_sample.rb
 構文解析の段階で他の言語機能を使ったプログラムに変換して扱うもの
 Rubyの `case` 文は単純な糖衣構文ではない
 
+# 6.6.1 帰ってきたFizzBuzz
+
+`%` `**` をparseしてみる
+
+```
+goh@goh% be ruby 661_modulo_exponential.rb
+["stmts", ["%", ["lit", 5], ["lit", 3]], ["**", ["lit", 2], ["lit", 4]]]
+```
+
