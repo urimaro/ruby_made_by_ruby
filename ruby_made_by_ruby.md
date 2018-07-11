@@ -928,3 +928,13 @@ goh@goh% be ruby interp.rb fizzbuzz.rb
 "Buzz"
 ```
 
+1から10までの階乗を計算した
+
+```
+goh@goh% be ruby 661_factorial.rb
+3628800
+goh@goh% pry
+2.5.1 pry> 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10
+=> 3628800
+```
+
