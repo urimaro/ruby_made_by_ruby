@@ -985,3 +985,17 @@ goh@goh% be ruby 662_begin_end_while.rb
    ["var_assign", "i", ["-", ["var_ref", "i"], ["lit", 1]]]]]]
 ```
 
+```
+goh@goh% be ruby interp.rb 662_begin_end_while_sample.rb
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+```
+
