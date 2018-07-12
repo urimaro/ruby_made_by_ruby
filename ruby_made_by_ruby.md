@@ -970,3 +970,18 @@ goh@goh% be ruby interp.rb 661_prime_sample.rb
 97
 ```
 
+# 6.6.2 begin ... end whileの実装
+
+`begin ... end while` をparseしてみる
+
+```
+goh@goh% be ruby 662_begin_end_while.rb
+["stmts",
+ ["var_assign", "i", ["lit", 10]],
+ ["while2",
+  [">", ["var_ref", "i"], ["lit", 0]],
+  ["stmts",
+   ["func_call", "p", ["var_ref", "i"]],
+   ["var_assign", "i", ["-", ["var_ref", "i"], ["lit", 1]]]]]]
+```
+
