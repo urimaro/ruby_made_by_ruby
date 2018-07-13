@@ -69,6 +69,6 @@ str = minruby_load()
 tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
-genv = {}
+genv = { "p" => ["builtin", "p"] }
 lenv = {}
 evaluate(tree, genv, lenv)
