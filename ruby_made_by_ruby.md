@@ -999,3 +999,25 @@ goh@goh% be ruby interp.rb 662_begin_end_while_sample.rb
 1
 ```
 
+# 6.6.3 case文の意味
+
+Rubyで実行した場合
+
+```
+goh@goh% be ruby 663_case.rb
+42
+"others"
+```
+
+minrubyで実行した場合
+
+```
+goh@goh% be ruby interp.rb 663_case.rb
+42
+42
+"others"
+```
+
+Rubyの場合、 `case` の条件を評価するのは1回
+minrubyの場合、 `when` の数だけ条件を評価する
+
