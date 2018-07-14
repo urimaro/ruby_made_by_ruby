@@ -1047,3 +1047,13 @@ goh@goh% be ruby 721_note.rb
 9
 ```
 
+# 7.3 関数呼び出しを実装する
+
+`p` の呼び出しをparseしてみる
+
+```
+goh@goh% be ruby 730_p.rb
+["func_call", "p", ["lit", 1]]
+["func_call", "p", ["lit", 1], ["lit", 2]]
+```
+
