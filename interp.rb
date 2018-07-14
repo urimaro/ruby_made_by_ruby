@@ -97,6 +97,17 @@ def fizzbuzz(n)
   end
 end
 
+def fibonacci(n)
+  case n
+  when 0
+    n
+  when 1
+    n
+  else
+    fibonacci(n - 2) + fibonacci(n - 1)
+  end
+end
+
 # 1. 計算式の文字列を読み込む
 str = minruby_load()
 
@@ -104,6 +115,6 @@ str = minruby_load()
 tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
-genv = { "fizzbuzz" => ["builtin", "fizzbuzz"], "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
+genv = { "fibonacci" => ["builtin", "fibonacci"], "fizzbuzz" => ["builtin", "fizzbuzz"], "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
 lenv = {}
 evaluate(tree, genv, lenv)

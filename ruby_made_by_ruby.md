@@ -1137,3 +1137,19 @@ goh@goh% be ruby interp.rb 751_fizzbuzz.rb
 "FizzBuzz"
 ```
 
+フィボナッチ数を返す関数を組み込み関数として追加する
+
+```
+goh@goh% be ruby interp.rb 751_fibonacci.rb
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+```
+
