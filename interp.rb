@@ -35,6 +35,10 @@ def evaluate(tree, genv, lenv)
       args[i] = evaluate(tree[i + 2], genv, lenv)
       i = i + 1
     end
+    mhd = genv[tree[1]]
+    if mhd[0] == "builtin"
+    else
+    end
   when "stmts"
     i = 1
     last = nil
