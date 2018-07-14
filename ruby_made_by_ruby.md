@@ -1071,3 +1071,24 @@ C: 不定(引数の順番に依存した実装はNG)
 
 `genv` から定義を取得する
 
+# 7.3.3 評価した引数に、指示されたRubyの関数を適用する
+
+Rubyの関数は以下で呼び出せる
+
+```
+minruby_call(関数名の文字列, 引数が詰まった配列)
+```
+
+```
+goh@goh% be ruby 733_p_sample.rb
+42
+1
+2
+3
+goh@goh% be ruby interp.rb 733_p_sample.rb
+42
+1
+2
+3
+```
+

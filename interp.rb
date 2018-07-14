@@ -37,6 +37,7 @@ def evaluate(tree, genv, lenv)
     end
     mhd = genv[tree[1]]
     if mhd[0] == "builtin"
+      minruby_call(mhd[1], args)
     else
     end
   when "stmts"
