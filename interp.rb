@@ -77,6 +77,26 @@ def add(x, y)
   x + y
 end
 
+def fizzbuzz(n)
+  i = 1
+  while i <= n
+    if (i % 3 == 0) && (i % 5 == 0)
+      p("FizzBuzz")
+    else
+      if i % 3 == 0
+        p("Fizz")
+      else
+        if i % 5 == 0
+          p("Buzz")
+        else
+          p(i)
+        end
+      end
+    end
+    i = i + 1
+  end
+end
+
 # 1. 計算式の文字列を読み込む
 str = minruby_load()
 
@@ -84,6 +104,6 @@ str = minruby_load()
 tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
-genv = { "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
+genv = { "fizzbuzz" => ["builtin", "fizzbuzz"], "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
 lenv = {}
 evaluate(tree, genv, lenv)
