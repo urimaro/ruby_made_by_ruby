@@ -72,6 +72,11 @@ def evaluate(tree, genv, lenv)
   end
 end
 
+# MinRuby組み込み関数
+def add(x, y)
+  x + y
+end
+
 # 1. 計算式の文字列を読み込む
 str = minruby_load()
 
@@ -79,6 +84,6 @@ str = minruby_load()
 tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
-genv = { "p" => ["builtin", "p"] }
+genv = { "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
 lenv = {}
 evaluate(tree, genv, lenv)

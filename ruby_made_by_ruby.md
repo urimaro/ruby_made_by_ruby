@@ -1092,3 +1092,12 @@ goh@goh% be ruby interp.rb 733_p_sample.rb
 3
 ```
 
+# 7.5.1 独自の組み込み関数の追加
+
+MinRubyの組み込み関数として `add(x, y)` を追加する
+
+```
+goh@goh% be ruby interp.rb 751_add.rb
+3
+```
+
