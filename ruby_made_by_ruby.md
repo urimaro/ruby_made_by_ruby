@@ -1279,3 +1279,5 @@ false
 ["ary_new", ["lit", 1], ["lit", 2], ["lit", 3], ["*", ["lit", 6], ["lit", 7]]]
 ```
 
+Rubyの配列を使って、MinRubyの配列を実装する
+
