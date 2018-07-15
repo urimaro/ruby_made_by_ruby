@@ -1216,3 +1216,16 @@ goh@goh% be ruby interp.rb 840_scope.rb
 0
 ```
 
+変数のスコープを分ける = 新しい環境を作って渡す
+
+genv <= global environment
+lenv <= local environment
+
+```
+goh@goh% be ruby interp.rb 840_scope.rb
+0
+1
+```
+
+Rubyの変数のスコープを使って、MinRubyの変数のスコープを実現している
+
