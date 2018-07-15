@@ -1245,3 +1245,13 @@ goh@goh% be ruby interp.rb 861_fibonacci.rb
 34
 ```
 
+# 8.6.2 相互再帰
+
+```
+goh@goh% be ruby interp.rb 862_mutual_recursion.rb
+"even?(2):"
+true
+"even?(3)"
+false
+```
+
