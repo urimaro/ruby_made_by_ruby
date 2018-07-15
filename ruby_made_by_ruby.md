@@ -1200,3 +1200,19 @@ goh@goh% be ruby interp.rb 830_program1.rb
 2
 ```
 
+# 8.4 変数のスコープ
+
+Ruby: 変数は関数ごとに定義される
+MinRuby: プログラム全体で定義される
+
+スコープ: 変数を参照できる範囲
+
+```
+goh@goh% be ruby 840_scope.rb
+0
+1
+goh@goh% be ruby interp.rb 840_scope.rb
+0
+0
+```
+
