@@ -1312,3 +1312,14 @@ goh@goh% be ruby interp.rb 912_reference_array_sample.rb
 3
 ```
 
+# 9.1.3 配列代入の実装
+
+配列代入をparseする
+
+```
+goh@goh% be ruby 913_assign_to_array.rb
+["stmts",
+ ["var_assign", "ary", ["ary_new", ["lit", 1]]],
+ ["ary_assign", ["var_ref", "ary"], ["lit", 0], ["lit", 42]]]
+```
+
