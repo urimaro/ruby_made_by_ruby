@@ -1281,3 +1281,14 @@ false
 
 Rubyの配列を使って、MinRubyの配列を実装する
 
+# 9.1.2 配列参照の実装
+
+配列参照をparseする
+
+```
+goh@goh% be ruby 912_reference_array.rb
+["stmts",
+ ["var_assign", "ary", ["ary_new", ["lit", 1]]],
+ ["ary_ref", ["var_ref", "ary"], ["lit", 0]]]
+```
+
