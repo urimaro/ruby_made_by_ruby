@@ -1153,3 +1153,5 @@ goh@goh% be ruby interp.rb 751_fibonacci.rb
 34
 ```
 
+Rubyの組み込み関数 or MinRubyの組み込み関数 はどうやって判定しているのか？
+
