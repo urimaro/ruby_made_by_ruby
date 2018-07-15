@@ -28,6 +28,8 @@ def evaluate(tree, genv, lenv)
     evaluate(tree[1], genv, lenv) > evaluate(tree[2], genv, lenv)
   when "!="
     evaluate(tree[1], genv, lenv) != evaluate(tree[2], genv, lenv)
+  when "func_def"
+    genv[tree[1]] = ["user_defined", tree[2], tree[3]]
   when "func_call"
     args = []
     i = 0
