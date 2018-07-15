@@ -1323,3 +1323,23 @@ goh@goh% be ruby 913_assign_to_array.rb
  ["ary_assign", ["var_ref", "ary"], ["lit", 0], ["lit", 42]]]
 ```
 
+Rubyの配列代入を使って、MinRubyの配列代入を実装する
+配列代入の構文木の構造は、以下のとおり
+
+```
+["ary_assign", 配列を表す式, インデックスを表す式, 代入したい値を表す式]
+```
+
+配列参照と同じ方法で取得した情報を使って、Rubyの配列に代入する
+
+```
+goh@goh% be ruby 913_assign_to_array_sample.rb
+42
+2
+3
+goh@goh% be ruby interp.rb 913_assign_to_array_sample.rb
+42
+2
+3
+```
+
