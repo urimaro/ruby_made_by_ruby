@@ -85,6 +85,10 @@ def evaluate(tree, genv, lenv)
       i = i + 1
     end
     ary
+  when "ary_ref"
+    ary = evaluate(tree[1], genv, lenv)
+    idx = evaluate(tree[2], genv, lenv)
+    ary[idx]
   else
     pp(tree)
   end

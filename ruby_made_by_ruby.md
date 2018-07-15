@@ -1292,3 +1292,23 @@ goh@goh% be ruby 912_reference_array.rb
  ["ary_ref", ["var_ref", "ary"], ["lit", 0]]]
 ```
 
+Rubyの配列参照を使って、MinRubyの配列参照を実装する
+配列参照の構文木の構造は、以下のとおり
+
+```
+["ary_ref", 配列を表す式, インデックスを表す式]
+```
+
+「配列を表す式」からRubyの配列を取得し、「インデックスを表す式」からインデックスを取得すれば、Rubyの配列を操作して値を取得できる
+
+```
+goh@goh% be ruby 912_reference_array_sample.rb
+1
+2
+3
+goh@goh% be ruby interp.rb 912_reference_array_sample.rb
+1
+2
+3
+```
+
