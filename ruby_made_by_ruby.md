@@ -1229,3 +1229,19 @@ goh@goh% be ruby interp.rb 840_scope.rb
 
 Rubyの変数のスコープを使って、MinRubyの変数のスコープを実現している
 
+# 8.6.1 フィボナッチ関数
+
+```
+goh@goh% be ruby interp.rb 861_fibonacci.rb
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+```
+
