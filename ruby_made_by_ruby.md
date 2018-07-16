@@ -1571,3 +1571,31 @@ bundle exec ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb
 `minruby_load` は呼び出されるたびに、「次」のファイルを読み込む
 `require` は複数回呼び出されても、1度しか読み込まない
 
+# 付録：この本の先には？
+## Rubyについて
+
+- 初めてのRuby: Yugui著
+
+## 構文解析について
+
+構文解析
+
+- LL法
+- LR法
+- LALR法
+- Parsing Expression Grammer(PEG)
+
+Parser
+
+- bison: C
+- racc: Ruby
+- treetop: Ruby
+
+## コンパイラについて
+インタプリタのブートストラップは実用上はあまり意味がない
+MinRubyインタプリタはRubyが必要
+
+コンパイラであれば、元のバイナリが不要になるので自分を持ち上げることができる
+Rubyには実用的なコンパイラがない
+LLVMの教科書から入るのが良い
+
