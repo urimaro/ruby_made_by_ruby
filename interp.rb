@@ -151,6 +151,15 @@ str = minruby_load()
 tree = minruby_parse(str)
 
 # 3. 計算の木を実行(計算)する
-genv = { "fibonacci" => ["builtin", "fibonacci"], "fizzbuzz" => ["builtin", "fizzbuzz"], "add" => ["builtin", "add"], "p" => ["builtin", "p"] }
+genv = {
+  "p" => ["builtin", "p"],
+  "require" => ["builtin", "require"],
+  "minruby_parse" => ["builtin", "minruby_parse"],
+  "minruby_load" => ["builtin", "minruby_load"],
+  "minruby_call" => ["builtin", "minruby_call"],
+# "add" => ["builtin", "add"],
+  "fizzbuzz" => ["builtin", "fizzbuzz"],
+  "fibonacci" => ["builtin", "fibonacci"],
+}
 lenv = {}
 evaluate(tree, genv, lenv)
