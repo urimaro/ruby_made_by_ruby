@@ -1409,3 +1409,165 @@ MinRubyインタプリタが使っている組み込み関数は以下のとお�
 
 Rubyの関数(実際はminruby gemの関数)に丸投げする
 
+# 9.3.5 ブートストラップしてみる
+
+```
+goh@goh% be ruby interp.rb interp.rb fizzbuzz.rb
+1
+2
+"Fizz"
+4
+"Buzz"
+"Fizz"
+7
+8
+"Fizz"
+"Buzz"
+11
+"Fizz"
+13
+14
+"FizzBuzz"
+16
+17
+"Fizz"
+19
+"Buzz"
+"Fizz"
+22
+23
+"Fizz"
+"Buzz"
+26
+"Fizz"
+28
+29
+"FizzBuzz"
+31
+32
+"Fizz"
+34
+"Buzz"
+"Fizz"
+37
+38
+"Fizz"
+"Buzz"
+41
+"Fizz"
+43
+44
+"FizzBuzz"
+46
+47
+"Fizz"
+49
+"Buzz"
+"Fizz"
+52
+53
+"Fizz"
+"Buzz"
+56
+"Fizz"
+58
+59
+"FizzBuzz"
+61
+62
+"Fizz"
+64
+"Buzz"
+"Fizz"
+67
+68
+"Fizz"
+"Buzz"
+71
+"Fizz"
+73
+74
+"FizzBuzz"
+76
+77
+"Fizz"
+79
+"Buzz"
+"Fizz"
+82
+83
+"Fizz"
+"Buzz"
+86
+"Fizz"
+88
+89
+"FizzBuzz"
+91
+92
+"Fizz"
+94
+"Buzz"
+"Fizz"
+97
+98
+"Fizz"
+"Buzz"
+```
+
+```
+goh@goh% time bundle exec ruby interp.rb interp.rb fizzbuzz.rb
+:
+bundle exec ruby interp.rb interp.rb fizzbuzz.rb
+0.72s user
+0.42s system
+65% cpu
+1.719 total
+```
+
+```
+goh@goh% time be ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb
+:
+bundle exec ruby interp.rb interp.rb interp.rb fizzbuzz.rb
+3.20s user
+0.52s system
+83% cpu
+4.444 total
+```
+
+```
+goh@goh% time be ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb
+Traceback (most recent call last):
+	5458: from interp.rb:165:in `<main>'
+	5457: from interp.rb:57:in `evaluate'
+	5456: from interp.rb:51:in `evaluate'
+	5455: from interp.rb:69:in `evaluate'
+	5454: from interp.rb:69:in `evaluate'
+	5453: from interp.rb:69:in `evaluate'
+	5452: from interp.rb:69:in `evaluate'
+	5451: from interp.rb:69:in `evaluate'
+	 ... 5446 levels...
+	   4: from interp.rb:69:in `evaluate'
+	   3: from interp.rb:69:in `evaluate'
+	   2: from interp.rb:66:in `evaluate'
+	   1: from interp.rb:24:in `evaluate'
+interp.rb:89:in `evaluate': stack level too deep (SystemStackError)
+bundle exec ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb  0.93s user 0.51s system 67% cpu 2.118 total
+```
+
+環境変数 `RUBY_THREAD_VM_STACK_SIZE` を指定する
+
+```
+goh@goh% export RUBY_THREAD_VM_STACK_SIZE=100000000
+goh@goh% time be ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb
+:
+bundle exec ruby interp.rb interp.rb interp.rb interp.rb fizzbuzz.rb
+189.67s user
+1.16s system
+99% cpu
+3:12.46 total
+```
+
+`minruby_load` は呼び出されるたびに、「次」のファイルを読み込む
+`require` は複数回呼び出されても、1度しか読み込まない
+
