@@ -1364,3 +1364,5 @@ goh@goh% be ruby 920_hash_constructor.rb
  ["lit", 30]]
 ```
 
+Rubyのハッシュを使って、MinRubyのハッシュを実装する
+
