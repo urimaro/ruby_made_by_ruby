@@ -1378,3 +1378,22 @@ Rubyのハッシュを使って、MinRubyのハッシュを実装する
     昔は「不可能なこと」と言う意味だった
 - プログラミング言語: 言語Xの処理系を言語Xで書いて動かすこと
 
+# 9.3.2 実行するFizzBuzzプログラムの準備
+
+MinRubyで実行したMinRubyでFizzBuzzを実行する
+
+```
+goh@goh% be ruby interp.rb interp.rb fizzbuzz.rb
+Traceback (most recent call last):
+	2: from interp.rb:156:in `<main>'
+	1: from interp.rb:57:in `evaluate'
+interp.rb:41:in `evaluate': undefined method `[]' for nil:NilClass (NoMethodError)
+```
+
+L41にて `mhd[0]` を参照したが `nil` だった
+`mhd` はL40にて `genv[tree[1]]` を実行して取得している
+`func_call` の処理中なので `tree[1]` には関数名が格納されているはず
+=>
+関数名を指定して `genv` から関数の情報を取得しようとしたが、 `genv["関数名"]` が `nil` だった
+`genv["関数名"]` が `nil` ということは、組み込み関数、またはユーザ関数が定義されていないことが推測される
+
