@@ -1343,3 +1343,24 @@ goh@goh% be ruby interp.rb 913_assign_to_array_sample.rb
 3
 ```
 
+# 9.2 ハッシュを実装する
+
+配列同様、以下を実装する
+
+- ハッシュ構築子
+- ハッシュ参照
+- ハッシュ代入
+
+ハッシュ構築子をparseする
+
+```
+goh@goh% be ruby 920_hash_constructor.rb
+["hash_new",
+ ["lit", 1],
+ ["lit", 10],
+ ["lit", 2],
+ ["lit", 20],
+ ["lit", 3],
+ ["lit", 30]]
+```
+
